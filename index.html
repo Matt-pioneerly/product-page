@@ -14,7 +14,9 @@
     <header class="main-header">
         <nav class="navbar">
             <div class="navbar-left">
-                <a href="/" class="navbar-logo">Pioneerly</a>
+                <a href="/" class="navbar-logo">
+                    <img src="pioneerly-logo.svg" alt="Pioneerly Logo" class="logo-img" style="height: 38px; width: auto; vertical-align: middle;" />
+                </a>
             </div>
             <div class="navbar-right">
                 <ul class="navbar-menu">
@@ -24,25 +26,25 @@
                             <div class="dropdown-section dropdown-bundles">
                                 <div class="dropdown-title">Bundles</div>
                                 <ul class="dropdown-list">
-                                    <li><span class="dropdown-icon">🚀</span> Launch My Practice</li>
-                                    <li><span class="dropdown-icon">📈</span> Grow My Practice</li>
+                                    <li><img src="assets/icons/launch.svg" class="dropdown-icon-svg" alt="Launch" /> Launch My Practice</li>
+                                    <li><img src="assets/icons/grow.svg" class="dropdown-icon-svg" alt="Grow" /> Grow My Practice</li>
                                 </ul>
                                 <a href="#" class="dropdown-compare">Compare All &rarr;</a>
                             </div>
                             <div class="dropdown-section dropdown-subs">
                                 <div class="dropdown-title">Subscriptions</div>
                                 <ul class="dropdown-list dropdown-list-grid">
-                                    <li><span class="dropdown-icon">🤖</span> SEO & AI</li>
-                                    <li><span class="dropdown-icon">🌟</span> Lead Qualification</li>
-                                    <li><span class="dropdown-icon">💸</span> Ads</li>
-                                    <li><span class="dropdown-icon">📊</span> Analytics</li>
-                                    <li><span class="dropdown-icon">🗂️</span> Social Media</li>
-                                    <li><span class="dropdown-icon">📁</span> CRM</li>
-                                    <li><span class="dropdown-icon">👀</span> First Impression</li>
-                                    <li><span class="dropdown-icon">🧲</span> Lead Magnet</li>
-                                    <li><span class="dropdown-icon">🏪</span> Local Marketing</li>
-                                    <li><span class="dropdown-icon">🧑‍💼</span> Fractional CMO</li>
-                                    <li><span class="dropdown-icon">🧘‍♂️</span> Wellbeing</li>
+                                    <li><img src="assets/icons/seo-ai.svg" class="dropdown-icon-svg" alt="SEO & AI" /> SEO & AI</li>
+                                    <li><img src="assets/icons/lead-qualification.svg" class="dropdown-icon-svg" alt="Lead Qualification" /> Lead Qualification</li>
+                                    <li><img src="assets/icons/ads.svg" class="dropdown-icon-svg" alt="Ads" /> Ads</li>
+                                    <li><img src="assets/icons/analytics.svg" class="dropdown-icon-svg" alt="Analytics" /> Analytics</li>
+                                    <li><img src="assets/icons/social-media.svg" class="dropdown-icon-svg" alt="Social Media" /> Social Media</li>
+                                    <li><img src="assets/icons/crm.svg" class="dropdown-icon-svg" alt="CRM" /> CRM</li>
+                                    <li><img src="assets/icons/first-impression.svg" class="dropdown-icon-svg" alt="First Impression" /> First Impression</li>
+                                    <li><img src="assets/icons/lead-magnet.svg" class="dropdown-icon-svg" alt="Lead Magnet" /> Lead Magnet</li>
+                                    <li><img src="assets/icons/local-marketing.svg" class="dropdown-icon-svg" alt="Local Marketing" /> Local Marketing</li>
+                                    <li><img src="assets/icons/fractional-cmo.svg" class="dropdown-icon-svg" alt="Fractional CMO" /> Fractional CMO</li>
+                                    <li><img src="assets/icons/wellbeing.svg" class="dropdown-icon-svg" alt="Wellbeing" /> Wellbeing</li>
                                 </ul>
                             </div>
                         </div>
@@ -357,5 +359,13 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const item = this.parentElement;
+          item.classList.toggle('open');
+        });
+      });
+    </script>
 </body>
 </html> 
