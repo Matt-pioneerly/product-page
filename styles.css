@@ -664,70 +664,129 @@ body {
     font-weight: 500;
 }
 
-/* --- Metrics Cards (Enhancements) --- */
+/* --- Metrics Cards (Modern Horizontal Layout) --- */
+.metrics-section {
+    padding: 3rem 0 2rem 0;
+    background: linear-gradient(90deg,#fafdff 0%,#fff 100%);
+}
+.metrics-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #222;
+    text-align: center;
+}
 .metrics-cards {
-    gap: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .metric-card {
-    background: linear-gradient(135deg, #faf9fc 60%, #f3e9fc 100%);
+    background: linear-gradient(135deg, #fff 60%, #f3e9fc 100%);
     border: 1.5px solid #f3e9fc;
-    box-shadow: 0 4px 20px rgba(119, 72, 205, 0.08);
-    border-radius: 16px;
-    padding: 2.2rem 1.7rem;
-    min-width: 220px;
-    max-width: 260px;
+    box-shadow: 0 4px 24px rgba(119, 72, 205, 0.10);
+    border-radius: 22px;
+    padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+    min-width: 260px;
+    max-width: 300px;
     align-items: center;
     text-align: center;
-    font-size: 1.13rem;
-    color: #444;
+    font-size: 1.18rem;
+    color: #333;
     font-weight: 500;
     transition: box-shadow 0.2s, transform 0.2s;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+.metric-card:hover {
+    box-shadow: 0 12px 40px rgba(119, 72, 205, 0.18);
+    transform: translateY(-4px) scale(1.04);
 }
 .metric-icon {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: linear-gradient(135deg, #f3e9fc 0%, #faf9fc 100%);
-    font-size: 2rem;
-    margin-bottom: 0.7rem;
-    box-shadow: 0 2px 8px rgba(119, 72, 205, 0.10);
+    font-size: 2.3rem;
+    margin-bottom: 1.1rem;
+    box-shadow: 0 2px 12px rgba(119, 72, 205, 0.13);
+    border: 2.5px solid #f3e9fc;
 }
 
-/* --- What's Included List (Enhancements) --- */
+/* --- What's Included List (Premium Card) --- */
+.included-section {
+    padding: 3rem 0 2rem 0;
+    background: linear-gradient(90deg,#fff 0%,#fafdff 100%);
+}
 .included-list {
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(119, 72, 205, 0.08);
-    padding: 2.2rem 2rem;
+    background: linear-gradient(135deg, #fff 60%, #f3e9fc 100%);
+    border-radius: 22px;
+    box-shadow: 0 4px 24px rgba(119, 72, 205, 0.10);
+    padding: 2.7rem 2.5rem;
     margin-top: 2.5rem;
-    gap: 1.2em;
-    font-size: 1.13rem;
-    color: #444;
+    gap: 1.5em;
+    font-size: 1.18rem;
+    color: #333;
     font-weight: 500;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 .included-list li {
     display: flex;
     align-items: center;
-    margin-bottom: 0.7em;
+    margin-bottom: 1.1em;
     font-size: 1.08em;
+    padding-left: 0.2em;
 }
 .included-icon {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: linear-gradient(135deg, #e0d6f7 0%, #f3e9fc 100%);
     color: #2ecc71;
-    font-size: 1.2em;
-    margin-right: 0.9em;
+    font-size: 1.5em;
+    margin-right: 1.1em;
     box-shadow: 0 2px 8px rgba(119, 72, 205, 0.10);
+}
+
+@media (max-width: 1100px) {
+    .metrics-cards {
+        gap: 1.2rem;
+    }
+    .metric-card {
+        min-width: 220px;
+        max-width: 340px;
+        padding: 2rem 1.2rem;
+    }
+    .included-list {
+        padding: 1.5rem 0.7rem;
+    }
+}
+@media (max-width: 900px) {
+    .metrics-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .metric-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .included-list {
+        padding: 1.2rem 0.5rem;
+    }
 }
 
 /* --- FAQ Accordion --- */
