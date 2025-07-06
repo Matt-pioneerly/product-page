@@ -261,51 +261,19 @@ body {
     filter: drop-shadow(0 2px 12px rgba(119, 72, 205, 0.10));
 }
 
-.hero-dashboard.hero-dashboard-large {
+.hero-visual-interface {
     position: absolute;
     left: 60%;
-    top: -40px;
-    transform: translate(-50%, 0) scale(1.18);
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(119, 72, 205, 0.13);
-    padding: 1.2rem 2.2rem 1.5rem 2.2rem;
-    min-width: 220px;
+    top: 38%;
+    transform: translate(-50%, -50%) scale(1.12);
     z-index: 7;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    border: 2.5px solid #f3e9fc;
+    filter: drop-shadow(0 8px 32px rgba(119, 72, 205, 0.13));
+    pointer-events: none;
 }
 
-.dashboard-bar {
-    width: 120px;
-    height: 14px;
-    border-radius: 7px;
-    background: linear-gradient(90deg, #7748cd 0%, #d740a6 100%);
-    margin-bottom: 0.6rem;
-}
-
-.dashboard-chart {
-    margin-bottom: 0.4rem;
-}
-
-.dashboard-chat.dashboard-chat-large {
-    display: flex;
-    align-items: center;
-    gap: 0.7em;
-    font-size: 1.18rem;
-    color: #7748cd;
-    font-weight: 700;
-    background: #f7f6fa;
-    border-radius: 10px;
-    padding: 0.4em 1.2em;
-    box-shadow: 0 2px 8px rgba(119, 72, 205, 0.10);
-}
-
-.dashboard-chat-icon {
-    font-size: 1.3em;
+.hero-interface-svg {
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(119, 72, 205, 0.10);
 }
 
 .hero-visual-person {
@@ -696,10 +664,10 @@ body {
         top: 70%;
         transform: translate(-50%, -50%) scale(0.85);
     }
-    .hero-dashboard.hero-dashboard-large {
+    .hero-visual-interface {
         left: 70%;
-        top: -20px;
-        transform: translate(-50%, 0) scale(0.85);
+        top: 38%;
+        transform: translate(-50%, -50%) scale(0.85);
     }
     .hero-visual-person {
         left: 20%;
@@ -721,10 +689,10 @@ body {
         top: 80%;
         transform: translate(-50%, -50%) scale(0.55);
     }
-    .hero-dashboard.hero-dashboard-large {
+    .hero-visual-interface {
         left: 80%;
-        top: 0px;
-        transform: translate(-50%, 0) scale(0.55);
+        top: 38%;
+        transform: translate(-50%, -50%) scale(0.55);
     }
     .hero-visual-person {
         left: 0%;
@@ -749,10 +717,10 @@ body {
         top: 90%;
         transform: translate(-50%, -50%) scale(0.35);
     }
-    .hero-dashboard.hero-dashboard-large {
+    .hero-visual-interface {
         left: 90%;
-        top: 0px;
-        transform: translate(-50%, 0) scale(0.35);
+        top: 38%;
+        transform: translate(-50%, -50%) scale(0.35);
     }
     .hero-visual-person {
         left: -10px;
