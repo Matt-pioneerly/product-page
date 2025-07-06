@@ -10,18 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <a href="https://www.pioneerly.com" class="logo-link">
-                <img src="pioneerly-logo.svg" alt="Pioneerly Logo" class="logo-img" />
-            </a>
-            <nav class="nav">
-                <a href="https://www.pioneerly.com" class="nav-link">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-        </div>
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="/" class="navbar-logo">Pioneerly</a>
+            </div>
+            <div class="navbar-right">
+                <ul class="navbar-menu">
+                    <li class="navbar-item navbar-dropdown">
+                        <a href="#" class="navbar-link">Services</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section dropdown-bundles">
+                                <div class="dropdown-title">Bundles</div>
+                                <ul class="dropdown-list">
+                                    <li><span class="dropdown-icon">🚀</span> Launch My Practice</li>
+                                    <li><span class="dropdown-icon">📈</span> Grow My Practice</li>
+                                </ul>
+                                <a href="#" class="dropdown-compare">Compare All &rarr;</a>
+                            </div>
+                            <div class="dropdown-section dropdown-subs">
+                                <div class="dropdown-title">Subscriptions</div>
+                                <ul class="dropdown-list dropdown-list-grid">
+                                    <li><span class="dropdown-icon">🤖</span> SEO & AI</li>
+                                    <li><span class="dropdown-icon">🌟</span> Lead Qualification</li>
+                                    <li><span class="dropdown-icon">💸</span> Ads</li>
+                                    <li><span class="dropdown-icon">📊</span> Analytics</li>
+                                    <li><span class="dropdown-icon">🗂️</span> Social Media</li>
+                                    <li><span class="dropdown-icon">📁</span> CRM</li>
+                                    <li><span class="dropdown-icon">👀</span> First Impression</li>
+                                    <li><span class="dropdown-icon">🧲</span> Lead Magnet</li>
+                                    <li><span class="dropdown-icon">🏪</span> Local Marketing</li>
+                                    <li><span class="dropdown-icon">🧑‍💼</span> Fractional CMO</li>
+                                    <li><span class="dropdown-icon">🧘‍♂️</span> Wellbeing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About Us</a></li>
+                    <li class="navbar-item"><a href="#about-you" class="navbar-link">About You</a></li>
+                    <li class="navbar-item"><a href="#library" class="navbar-link">Library</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Us</a></li>
+                </ul>
+                <a href="#subscribe" class="navbar-subscribe-btn">Subscribe</a>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -53,6 +86,19 @@
                 <div class="hero-visual-bg"></div>
                 <div class="hero-visual-abstract hero-abstract-1"></div>
                 <div class="hero-visual-abstract hero-abstract-2"></div>
+                <div class="hero-visual-abstract hero-abstract-3"></div>
+                <div class="hero-visual-abstract hero-abstract-4"></div>
+                <svg class="hero-abstract-growthline-1" width="120" height="80" viewBox="0 0 120 80" fill="none">
+                    <polyline points="0,70 20,40 40,60 60,20 80,50 100,10 120,30" stroke="#d740a6" stroke-width="4" fill="none" opacity="0.13"/>
+                </svg>
+                <svg class="hero-abstract-growthline-2" width="90" height="60" viewBox="0 0 90 60" fill="none">
+                    <polyline points="0,50 30,20 60,40 90,10" stroke="#7748cd" stroke-width="3" fill="none" opacity="0.15"/>
+                </svg>
+                <svg class="hero-abstract-dots" width="60" height="20" viewBox="0 0 60 20" fill="none">
+                    <circle cx="10" cy="10" r="4" fill="#f54e5a" opacity="0.13"/>
+                    <circle cx="30" cy="10" r="4" fill="#d740a6" opacity="0.13"/>
+                    <circle cx="50" cy="10" r="4" fill="#7748cd" opacity="0.13"/>
+                </svg>
                 <div class="hero-visual-growth">
                     <svg width="340" height="180" class="hero-growth-svg" viewBox="0 0 340 180" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 170 Q120 60 180 140 Q280 220 320 40" stroke="#7748cd" stroke-width="8" fill="none" opacity="0.18"/>
