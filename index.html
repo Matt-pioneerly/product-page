@@ -77,12 +77,21 @@
     <!-- Key Metrics Section -->
     <section class="metrics-section" style="background:linear-gradient(90deg,#fafdff 0%,#fff 100%); padding:3rem 0 2rem 0;">
         <div class="container">
-            <h3 style="font-size:1.6rem; font-weight:700; margin-bottom:1.2rem; color:#222;">Key metrics tracked in this subscription:</h3>
-            <ul style="list-style:none; padding:0; font-size:1.15rem; color:#555;">
-                <li style="margin-bottom:1.2em;">Leads from Google search results</li>
-                <li style="margin-bottom:1.2em;">Leads from AI assistants</li>
-                <li>Relevant organic traffic to your website</li>
-            </ul>
+            <h3 class="metrics-title">Key metrics tracked in this subscription:</h3>
+            <div class="metrics-cards">
+                <div class="metric-card">
+                    <span class="metric-icon">🔎</span>
+                    <span>Leads from Google search results</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-icon">🤖</span>
+                    <span>Leads from AI assistants</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-icon">📈</span>
+                    <span>Relevant organic traffic to your website</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -93,13 +102,13 @@
                 <span class="gradient-headline" style="font-size:1.1rem; font-weight:600; background:rgba(119,72,205,0.07); padding:0.4em 1.2em; border-radius:12px;">Rank Higher On Google And Beyond</span>
             </div>
             <h2 class="section-title gradient-headline">What's Included</h2>
-            <ul style="list-style:none; padding:0; color:#555; font-size:1.13rem; text-align:center; max-width:900px; margin:0 auto;">
-                <li style="margin-bottom:1.1em;">- Short and long-term content strategy designed to grow organic traffic</li>
-                <li style="margin-bottom:1.1em;">- Monthly pipeline of content that is useful to your target audience and empowers AI assistants to better understand your practice</li>
-                <li style="margin-bottom:1.1em;">- Cutting-edge tactics designed to boost your practice's visibility across all major GPTs</li>
-                <li style="margin-bottom:1.1em;">- Technical optimization that improves the speed and performance of your website</li>
-                <li style="margin-bottom:1.1em;">- On-site and off-site growth tactics</li>
-                <li>- Full tracking and reporting on all key growth metrics</li>
+            <ul class="included-list">
+                <li><span class="included-icon">✅</span> Short and long-term content strategy designed to grow organic traffic</li>
+                <li><span class="included-icon">✅</span> Monthly pipeline of content that is useful to your target audience and empowers AI assistants to better understand your practice</li>
+                <li><span class="included-icon">✅</span> Cutting-edge tactics designed to boost your practice's visibility across all major GPTs</li>
+                <li><span class="included-icon">✅</span> Technical optimization that improves the speed and performance of your website</li>
+                <li><span class="included-icon">✅</span> On-site and off-site growth tactics</li>
+                <li><span class="included-icon">✅</span> Full tracking and reporting on all key growth metrics</li>
             </ul>
         </div>
     </section>
@@ -118,22 +127,30 @@
     <section class="faq-section" style="background:linear-gradient(90deg,#fff 0%,#fafdff 100%); padding:3rem 0 2rem 0;">
         <div class="container">
             <h2 class="section-title gradient-headline">Frequently Asked Questions</h2>
-            <div style="max-width:800px; margin:2rem auto 0 auto;">
-                <div style="margin-bottom:2em;">
-                    <strong>How is this different from traditional SEO?</strong>
-                    <div style="color:#555; margin-top:0.4em;">We combine proven SEO strategies with AI assistant optimization, so your firm is visible not just on Google, but also when clients ask AI tools for recommendations.</div>
+            <div class="faq-accordion" style="max-width:800px; margin:2rem auto 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">How is this different from traditional SEO?</button>
+                    <div class="faq-answer">
+                        We combine proven SEO strategies with AI assistant optimization, so your firm is visible not just on Google, but also when clients ask AI tools for recommendations.
+                    </div>
                 </div>
-                <div style="margin-bottom:2em;">
-                    <strong>What are AI assistants?</strong>
-                    <div style="color:#555; margin-top:0.4em;">AI assistants are tools like ChatGPT, Claude, Gemini, and others that people use to get advice and recommendations—including for legal services.</div>
+                <div class="faq-item">
+                    <button class="faq-question">What are AI assistants?</button>
+                    <div class="faq-answer">
+                        AI assistants are tools like ChatGPT, Claude, Gemini, and others that people use to get advice and recommendations—including for legal services.
+                    </div>
                 </div>
-                <div style="margin-bottom:2em;">
-                    <strong>How do I know if it's working?</strong>
-                    <div style="color:#555; margin-top:0.4em;">We provide full tracking and reporting on all key metrics, including leads from Google, AI assistants, and organic website traffic.</div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I know if it's working?</button>
+                    <div class="faq-answer">
+                        We provide full tracking and reporting on all key metrics, including leads from Google, AI assistants, and organic website traffic.
+                    </div>
                 </div>
-                <div style="margin-bottom:2em;">
-                    <strong>Can this work for any law firm?</strong>
-                    <div style="color:#555; margin-top:0.4em;">Yes! Our approach is tailored for all practice types and firm sizes.</div>
+                <div class="faq-item">
+                    <button class="faq-question">Can this work for any law firm?</button>
+                    <div class="faq-answer">
+                        Yes! Our approach is tailored for all practice types and firm sizes.
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,4 +241,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
