@@ -1039,4 +1039,75 @@ body {
         justify-content: center;
         margin-bottom: 1rem;
     }
+}
+
+/* --- Extra Abstract Elements Around Hero Visual --- */
+.hero-abstract-3 {
+    width: 120px; height: 120px;
+    background: linear-gradient(135deg, #f54e5a 0%, #f3e9fc 100%);
+    position: absolute;
+    top: -50px; right: -60px;
+    opacity: 0.12;
+    border-radius: 50%;
+    filter: blur(36px);
+    z-index: 0;
+}
+.hero-abstract-4 {
+    width: 90px; height: 90px;
+    background: linear-gradient(135deg, #7748cd 0%, #d740a6 100%);
+    position: absolute;
+    bottom: -40px; left: -40px;
+    opacity: 0.10;
+    border-radius: 50%;
+    filter: blur(28px);
+    z-index: 0;
+}
+.hero-abstract-growthline-1 {
+    position: absolute;
+    left: -60px;
+    top: 60px;
+    z-index: 2;
+    pointer-events: none;
+}
+.hero-abstract-growthline-2 {
+    position: absolute;
+    right: -40px;
+    bottom: 40px;
+    z-index: 2;
+    pointer-events: none;
+}
+.hero-abstract-dots {
+    position: absolute;
+    left: 30px;
+    bottom: -18px;
+    z-index: 2;
+    pointer-events: none;
+}
+@media (max-width: 900px) {
+    .hero-abstract-3 {
+        width: 60px; height: 60px;
+        top: -20px; right: -20px;
+    }
+    .hero-abstract-4 {
+        width: 40px; height: 40px;
+        bottom: -10px; left: -10px;
+    }
+    .hero-abstract-growthline-1 {
+        left: -30px;
+        top: 20px;
+        width: 60px;
+        height: 40px;
+    }
+    .hero-abstract-growthline-2 {
+        right: -20px;
+        bottom: 10px;
+        width: 45px;
+        height: 30px;
+    }
+    .hero-abstract-dots {
+        left: 10px;
+        bottom: -8px;
+        width: 30px;
+        height: 10px;
+    }
 } 
