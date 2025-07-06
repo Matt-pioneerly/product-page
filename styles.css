@@ -190,12 +190,13 @@ body {
 /* Hero Visual */
 .hero-visual {
     position: relative;
-    height: 420px;
+    height: 440px;
     min-width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    overflow: visible;
 }
 
 .hero-visual-bg {
@@ -207,25 +208,117 @@ body {
     overflow: hidden;
 }
 
-.tech-background {
+.hero-visual-abstract {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    z-index: 2;
+    border-radius: 50%;
+    filter: blur(32px);
+    z-index: 0;
     pointer-events: none;
+}
+
+.hero-abstract-1 {
+    width: 180px; height: 180px;
+    background: linear-gradient(135deg, #7748cd 0%, #f54e5a 100%);
+    top: -40px; left: -60px;
+    opacity: 0.13;
+}
+
+.hero-abstract-2 {
+    width: 120px; height: 120px;
+    background: linear-gradient(135deg, #d740a6 0%, #f3e9fc 100%);
+    bottom: -30px; right: -50px;
+    opacity: 0.11;
+}
+
+.hero-visual-growth {
+    position: absolute;
+    left: 60%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.hero-growth-svg {
+    width: 220px;
+    height: 140px;
+    display: block;
+}
+
+.hero-visual-device {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%) scale(1.08);
+    z-index: 5;
+    filter: drop-shadow(0 8px 32px rgba(119, 72, 205, 0.13));
+    pointer-events: none;
+}
+
+.hero-device-svg {
+    z-index: 5;
+    position: relative;
+    filter: drop-shadow(0 2px 12px rgba(119, 72, 205, 0.10));
+}
+
+.hero-dashboard {
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%, -60%) scale(1.05);
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(119, 72, 205, 0.10);
+    padding: 0.7rem 1.2rem 0.9rem 1.2rem;
+    min-width: 120px;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border: 1.5px solid #f3e9fc;
+}
+
+.dashboard-bar {
+    width: 60px;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #7748cd 0%, #d740a6 100%);
+    margin-bottom: 0.3rem;
+}
+
+.dashboard-chart {
+    margin-bottom: 0.2rem;
+}
+
+.dashboard-chat {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1.01rem;
+    color: #7748cd;
+    font-weight: 600;
+    background: #f7f6fa;
+    border-radius: 8px;
+    padding: 0.2em 0.7em;
+}
+
+.dashboard-chat-icon {
+    font-size: 1.1em;
 }
 
 .hero-visual-people {
     position: absolute;
-    left: 18%;
-    top: 30%;
-    z-index: 4;
+    left: 7%;
+    top: 38%;
+    z-index: 7;
     display: flex;
     gap: 0.5rem;
 }
 
 .hero-face {
-    width: 56px;
-    height: 56px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #fff;
@@ -235,24 +328,24 @@ body {
     transition: transform 0.2s;
 }
 
-.hero-face-1 { transform: translateY(-10px) scale(1.08); z-index: 2; }
-.hero-face-2 { transform: translateY(10px) scale(1.04); z-index: 1; }
-.hero-face-3 { transform: translateY(-8px) scale(1.02); z-index: 3; }
-.hero-face-4 { transform: translateY(12px) scale(1.00); z-index: 0; }
-.hero-visual-people .hero-face:hover { transform: scale(1.13) translateY(-4px); z-index: 5; }
+.hero-face-1 { transform: translateY(-18px) scale(1.13); z-index: 2; }
+.hero-face-2 { transform: translateY(18px) scale(1.07); z-index: 1; }
+.hero-face-3 { transform: translateY(-12px) scale(1.05); z-index: 3; }
+.hero-face-4 { transform: translateY(22px) scale(1.00); z-index: 0; }
+.hero-visual-people .hero-face:hover { transform: scale(1.18) translateY(-4px); z-index: 8; }
 
 .hero-visual-tech {
     position: absolute;
-    right: 18%;
-    top: 24%;
-    z-index: 4;
+    right: -30px;
+    top: 18%;
+    z-index: 8;
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
 }
 
 .hero-tech-icon {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     background: linear-gradient(135deg, #7748cd 0%, #d740a6 50%, #f54e5a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -262,18 +355,11 @@ body {
     margin-bottom: 0.2em;
 }
 
-.hero-visual-growth {
+.tech-background {
     position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-    z-index: 3;
-}
-
-.hero-growth-svg {
-    width: 180px;
-    height: 120px;
-    display: block;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* Floating elements for extra depth */
@@ -625,40 +711,69 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .hero-visual {
-        height: 300px;
-        min-width: 0;
-    }
-    .hero-visual-people {
-        left: 8%;
-        top: 38%;
-    }
-    .hero-visual-tech {
-        right: 8%;
-        top: 18%;
-    }
-    .hero-growth-svg {
-        width: 120px;
-        height: 80px;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero-visual {
-        height: 180px;
+        height: 320px;
     }
     .hero-visual-people {
         left: 2%;
         top: 45%;
     }
     .hero-visual-tech {
-        right: 2%;
+        right: -10px;
+        top: 10%;
+    }
+    .hero-visual-device {
+        left: 55%;
+        top: 60%;
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-visual {
+        height: 220px;
+        min-width: 0;
+    }
+    .hero-visual-people {
+        left: 0%;
+        top: 55%;
+    }
+    .hero-visual-tech {
+        right: -10px;
         top: 10%;
     }
     .hero-growth-svg {
-        width: 80px;
+        width: 90px;
         height: 40px;
+    }
+    .hero-visual-device {
+        left: 60%;
+        top: 70%;
+        transform: translate(-50%, -50%) scale(0.65);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-visual {
+        height: 120px;
+    }
+    .hero-visual-people {
+        left: -10px;
+        top: 60%;
+    }
+    .hero-visual-tech {
+        right: -10px;
+        top: 5%;
+    }
+    .hero-growth-svg {
+        width: 60px;
+        height: 20px;
+    }
+    .hero-visual-device {
+        left: 70%;
+        top: 80%;
+        transform: translate(-50%, -50%) scale(0.45);
     }
 }
 
